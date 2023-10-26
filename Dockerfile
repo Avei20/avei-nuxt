@@ -11,4 +11,4 @@ EXPOSE 3000
 
 RUN bun run build
 
-CMD [ "bun", "./output/server/index.mjs" ]
+CMD [ "bun", "run", ".output/server/index.mjs" ]
