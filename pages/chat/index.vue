@@ -85,7 +85,7 @@ const sendMessage = () => {
   if (!messageObject.message || !messageObject.aiModel) {
     return;
   }
-  console.log("Sending Messaoeuougoeue")
+  console.log("Sending Messagoeue")
 
   const msg = {
     id: messageObject.id,

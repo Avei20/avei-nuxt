@@ -8,7 +8,7 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      API: process.env.API,
+      API: process.env.API || 'https://nest.avei.ovh',
     }
   },
 
