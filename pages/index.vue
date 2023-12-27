@@ -13,7 +13,7 @@
         <VCardItem class="w-100">
             <VDivider/>
             <VBtn class="w-100 my-1" color="primary" to="/chat"> Gemini Chat </VBtn>
-            <VBtn class="w-100 my-1" color="primary" href="https://nest.avei.ovh/"> Nest.js API Swagger Docs  </VBtn>
+            <VBtn class="w-100 my-1" color="primary" href="https://nest.avei.ovh/docs"> Nest.js API Swagger Docs  </VBtn>
             <VBtn class="w-100 my-1" color="primary" href="https://echo.avei.ovh/"> Echo API Swagger Docs  </VBtn>
             <VBtn class="w-100 my-1" color="primary" href="https://elysia.avei.ovh/"> Elysia API Swagger Docs  </VBtn>
         </VCardItem>
