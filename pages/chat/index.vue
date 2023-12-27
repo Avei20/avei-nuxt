@@ -75,6 +75,8 @@ const messageObject = reactive({
   aiModel: null,
 })
 
+const appStore = useAppStore()
+
 const markedToHTML = (markdown: string) => {
   return marked(markdown)
 }
@@ -121,10 +123,16 @@ onBeforeMount(async () => {
   console.log('Connection Establishedoeu')
   $socket.emit('join', { paleo: 'paleo', name: 'user'})
 
-  $socket.on('new message', (msg) => {
+  $socket.on('new message', (msg:any) => {
     console.log('new message')
     console.log(msg)
     messages.value.push(msg)
+  })
+  
+  $socket.on('exception', (msg:any) => {
+    if (msg.status === 'error') {
+      appStore.showSnackbar(msg.message)
+    }  
   })
 })
 
