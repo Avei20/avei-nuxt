@@ -2,6 +2,10 @@ import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  experimental: {
+    renderJsonPayloads: false
+  },
+
   build: {
     transpile: ['vuetify'],
   },
@@ -16,8 +20,7 @@ export default defineNuxtConfig({
     '@pinia/nuxt',
     (_options, nuxt) => {
       nuxt.hooks.hook('vite:extendConfig', (config) => {
-        // @ts-expect-error
-        config.plugins.push(vuetify({ autoImport: true}))
+        config.plugins?.push(vuetify({ autoImport: true}))
       })
     },
   ],
@@ -39,7 +42,7 @@ export default defineNuxtConfig({
   },
 
   devtools: {
-    enabled: true,
+    enabled: process.env.NODE_ENV === 'development' ? true : false,
 
     timeline: {
       enabled: true

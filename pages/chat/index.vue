@@ -54,6 +54,7 @@
       </VCardActions>
     </VCard>
   </VCard>
+  <ChatCreateDialog/>
 </template>
 
 <script setup lang="ts">
@@ -76,6 +77,7 @@ const messageObject = reactive({
 })
 
 const appStore = useAppStore()
+const chatStore = useChatStore()
 
 const markedToHTML = (markdown: string) => {
   return marked(markdown)
@@ -114,6 +116,9 @@ const  fetchModel = async() => {
 
 
 onBeforeMount(async () => {
+  // Open Chat Dialog
+  chatStore.isWantToCreate = true
+
   // Fetching list Model
   await fetchModel()
   console.log(config.public.API)

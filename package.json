@@ -16,13 +16,20 @@
     "vite-plugin-vuetify": "^2.0.1",
     "vue": "^3.3.7",
     "vue-router": "^4.2.5",
-    "vuetify": "^3.4.8"
+    "vuetify": "^3.4.10"
   },
   "dependencies": {
     "@mdi/font": "^7.3.67",
     "@nuxtjs/axios": "^5.13.6",
     "@types/marked": "^6.0.0",
     "@types/uuid": "^9.0.7",
+    "@vuelidate/core": "^2.0.3",
+    "@vuelidate/validators": "^2.0.4",
+    "graphology": "^0.25.4",
+    "graphology-layout-force": "^0.2.4",
+    "graphology-layout-forceatlas2": "^0.10.1",
+    "graphology-types": "^0.24.7",
+    "sigma": "^3.0.0-beta.4",
     "socket.io-client": "^4.7.2",
     "uuid": "^9.0.1"
   }

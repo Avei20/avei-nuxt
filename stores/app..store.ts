@@ -3,6 +3,7 @@ import { defineStore } from 'pinia';
 export const useAppStore = defineStore('app', {
   state: () => ({
     userId: '',
+    username: '',
     messages: [],
     snackbar: {
         isShow: false,
