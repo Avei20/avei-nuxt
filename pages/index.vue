@@ -9,7 +9,7 @@
             <VBtn class="mx-1" icon="mdi-instagram" density="compact" href="https://instagram.com/avei___"/>
         </VCardItem>
         <VCardText class="text-center py-2">
-            Here are a list of my production work which can be accessed by in my Github account.
+            Here are a list of my production work which can be accessed by in my Github account. Feel free to contact me for collaboration about AI, Machine Learning and Web Development Projects.
         </VCardText>
         <VCardItem class="w-100">
             <VDivider/>

@@ -54,7 +54,7 @@
       </VCardActions>
     </VCard>
   </VCard>
-  <ChatCreateDialog/>
+  <!-- <ChatCreateDialog/> -->
 </template>
 
 <script setup lang="ts">
