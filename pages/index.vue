@@ -115,7 +115,7 @@
                                 class="w-fit mx-3"
                                 icon="mdi-github"
                                 density="compact"
-                                href="httpe://github.com/Avei20/avei-draw"
+                                href="https://github.com/Avei20/avei-draw"
                             />
                             <VBtn
                                 class="w-fit mx-3"
