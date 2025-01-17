@@ -1,5 +1,6 @@
 <template>
-    <VCard class="ma-5 d-flex flex-column justify-center align-center">
+<div class="d-flex justify-center">
+    <VCard class="ma-5 d-flex flex-column justify-center align-center" max-width="800px">
         <VAvatar image="@/assets/avei.jpg" size="80" class="" />
         <VCardTitle color="primary" class="text-center font-bold"
             >I am Avei</VCardTitle
@@ -37,7 +38,7 @@
         </VCardText>
         <VCardItem class="w-100">
             <VDivider />
-            <VExpansionPanels>
+            <VExpansionPanels class="w-100 px-4">
                 <VExpansionPanel
                     class="ma-2"
                     title="Gemini Chat"
@@ -218,7 +219,7 @@
         </VCardText>
         <VTextarea
             v-model="v$.message.$model"
-            class="my-1 w-100 mx-2 px-3"
+            class="my-1 w-100 px-4"
             variant="outlined"
             density="compact"
             label="Feedback"
@@ -230,6 +231,7 @@
         </VTextarea>
         <VBtn class="mb-4" color="primary" @click="submitFeedback">Send</VBtn>
     </VCard>
+    </div>
 </template>
 
 <script setup lang="ts">
